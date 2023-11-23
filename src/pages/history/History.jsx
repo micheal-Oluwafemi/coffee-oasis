@@ -124,7 +124,7 @@ const History = () => {
                         <h1 className='text-lg text-primaryOrange font-semibold'>
                           $
                         </h1>
-                        <h1 className='text-2xl text-white font-medium'>
+                        <h1 className='text-xl text-white font-semibold'>
                           {getAllTotal(innerArray)}
                         </h1>
                       </div>
@@ -158,8 +158,8 @@ const History = () => {
                           </div>
                         </div>
                         <div className=''>
-                          <h1 className='text-[22px] text-white font-medium'>
-                            <span className='text-[19px] font-semibold text-primaryOrange pr-1'>
+                          <h1 className='text-[19px] text-white font-medium'>
+                            <span className='text-[17px] font-semibold text-primaryOrange pr-1'>
                               $
                             </span>
                             {(detail.amount * detail.prices).toFixed(2)}
