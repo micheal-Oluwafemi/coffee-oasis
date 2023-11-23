@@ -162,7 +162,7 @@ const History = () => {
                             <span className='text-[19px] font-semibold text-primaryOrange pr-1'>
                               $
                             </span>
-                            {detail.amount * detail.prices}
+                            {(detail.amount * detail.prices).toFixed(2)}
                           </h1>
 
                           <div className='flex flex-row items-center gap-3 pt-1'>
