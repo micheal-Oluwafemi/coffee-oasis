@@ -158,7 +158,7 @@ const History = () => {
                           </div>
                         </div>
                         <div className=''>
-                          <h1 className='text-[16px] text-white font-medium'>
+                          <h1 className='text-[17px] text-white font-semibold'>
                             <span className='text-[15px] font-semibold text-primaryOrange pr-1'>
                               $
                             </span>
@@ -175,7 +175,7 @@ const History = () => {
                             </div>
 
                             <div>
-                              <h1 className='text-primaryOrange font-semibold text-[17px]'>
+                              <h1 className='text-primaryOrange font-medium text-[15px]'>
                                 {detail.prices}
                               </h1>
                             </div>
