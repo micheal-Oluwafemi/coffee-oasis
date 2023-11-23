@@ -6,7 +6,6 @@ import Favourite from './pages/favorite/Favourite';
 import History from './pages/history/History';
 import CBDetails from './pages/details/CBDetails';
 import { ToastContainer, Zoom } from 'react-toastify';
-import FooterNavigation from './components/FooterNavigation';
 import Payment from './pages/payment/Payment';
 
 const App = () => {
