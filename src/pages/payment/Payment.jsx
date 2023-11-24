@@ -149,7 +149,7 @@ const Payment = () => {
                 dispatch(clearCart());
               }, 4000);
             }}
-            className='bg-primaryOrange px-5 py-3.5 rounded-xl cursor-pointer'
+            className='bg-primaryOrange px-5 py-3.5 rounded-xl cursor-pointer mb-1'
           >
             <h1 className='text-white font-semibold text-base'>
               Pay from {active}
