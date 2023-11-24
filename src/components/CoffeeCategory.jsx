@@ -10,7 +10,7 @@ import { useDispatch } from 'react-redux';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const CoffeeCategory = () => {
+const CoffeeCategory = (props) => {
   const [active, setActive] = useState('All');
   const [filtered, setFiltered] = useState([]);
   const dispatch = useDispatch();
@@ -22,6 +22,7 @@ const CoffeeCategory = () => {
   return (
     <div>
       <div className='flex gap-10 overflow-x-scroll pb-4 pt-2 cursor-pointer '>
+        {/* <p className='text-xl text-white font-semibold'>{props.Search}</p> */}
         <div onClick={() => setActive('All')}>
           <h2
             className={` ${
@@ -70,7 +71,11 @@ const CoffeeCategory = () => {
           }}
           className='relative'
         >
-          {CoffeeData.map((item) => (
+          {CoffeeData.filter((item) => {
+            return props.Search.toLowerCase() === ''
+              ? item
+              : item.name.toLowerCase().includes(props.Search);
+          }).map((item) => (
             <SwiperSlide
               key={item.id}
               className='bg-gradient-to-b  from-secondaryBlack via-[#24272c] to-[#0c0f14] w-[13.7rem] mr-4 rounded-xl animate__animated animate__slideInUp mt-2 p-2'

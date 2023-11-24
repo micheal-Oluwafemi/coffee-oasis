@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { logo, searchIcon } from '../assets';
 import CoffeeCategory from '../components/CoffeeCategory';
 import CoffeeBeansCategory from '../components/CoffeeBeansCategory';
@@ -10,6 +10,7 @@ import { HiMenuAlt3 } from 'react-icons/hi';
 const Home = () => {
   const dispatch = useDispatch();
   const { item } = useSelector((state) => state.cart);
+  const [search, setSearch] = useState('');
 
   useEffect(() => {
     dispatch(getCartTotal());
@@ -37,12 +38,14 @@ const Home = () => {
           <input
             type='text'
             placeholder='Find your Coffee..'
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
             className='w-full bg-transparent text-lg font-medium py-2 pl-7 outline-none border-0 text-gray-400 '
           />
         </div>
 
         <div className='pb-16'>
-          <CoffeeCategory />
+          <CoffeeCategory Search={search} />
           <CoffeeBeansCategory />
         </div>
       </div>
