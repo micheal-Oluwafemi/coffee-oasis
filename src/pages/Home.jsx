@@ -39,13 +39,14 @@ const Home = () => {
             type='text'
             placeholder='Find your Coffee..'
             value={search}
+            autoCapitalize='none'
             onChange={(e) => setSearch(e.target.value)}
             className='w-full bg-transparent text-lg font-medium py-2 pl-7 outline-none border-0 text-gray-400 '
           />
         </div>
 
         <div className='pb-16'>
-          <CoffeeCategory Search={search} />
+          <CoffeeCategory Search={search.toLowerCase()} />
           <CoffeeBeansCategory />
         </div>
       </div>

@@ -10,7 +10,7 @@ import { useDispatch } from 'react-redux';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const CoffeeCategory = (props) => {
+const CoffeeCategory = ({ Search }) => {
   const [active, setActive] = useState('All');
   const [filtered, setFiltered] = useState([]);
   const dispatch = useDispatch();
@@ -72,9 +72,9 @@ const CoffeeCategory = (props) => {
           className='relative'
         >
           {CoffeeData.filter((item) => {
-            return props.Search.toLowerCase() === ''
+            return Search.toLowerCase() === ''
               ? item
-              : item.name.toLowerCase().includes(props.Search);
+              : item.name.toLowerCase().includes(Search);
           }).map((item) => (
             <SwiperSlide
               key={item.id}
