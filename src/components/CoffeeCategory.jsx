@@ -10,7 +10,7 @@ import { useDispatch } from 'react-redux';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const CoffeeCategory = ({ Search }) => {
+const CoffeeCategory = ({ Search, setSearch }) => {
   const [active, setActive] = useState('All');
   const [filtered, setFiltered] = useState([]);
   const dispatch = useDispatch();
@@ -38,6 +38,7 @@ const CoffeeCategory = ({ Search }) => {
             key={item.id}
             onClick={() => {
               setActive(item.name);
+              setSearch('');
               const filter = CoffeeData.filter(
                 (prev) => prev.name === item.name
               );

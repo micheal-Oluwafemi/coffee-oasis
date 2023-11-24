@@ -47,7 +47,7 @@ const Home = () => {
         </div>
 
         <div className='pb-16'>
-          <CoffeeCategory Search={search.toLowerCase()} />
+          <CoffeeCategory Search={search.toLowerCase()} setSearch={setSearch}/>
           <CoffeeBeansCategory />
         </div>
       </div>
