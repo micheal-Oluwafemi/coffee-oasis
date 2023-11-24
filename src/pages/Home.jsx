@@ -17,8 +17,8 @@ const Home = () => {
   }, [item]);
 
   return (
-    <div className='relative'>
-      <div className='px-3 h-screen overflow-scroll py-3 font-poppins '>
+    <div className='relative '>
+      <div className='px-3 max-h-screen overflow-scroll py-3 font-poppins '>
         <div className='flex flex-row items-center justify-between'>
           <img src={logo} alt='logo' className='w-14 h-14' />
 
@@ -47,7 +47,7 @@ const Home = () => {
         </div>
 
         <div className='pb-16'>
-          <CoffeeCategory Search={search.toLowerCase()} setSearch={setSearch}/>
+          <CoffeeCategory Search={search.toLowerCase()} setSearch={setSearch} />
           <CoffeeBeansCategory />
         </div>
       </div>
