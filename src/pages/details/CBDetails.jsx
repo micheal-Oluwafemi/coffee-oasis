@@ -73,7 +73,7 @@ const CBDetails = () => {
                       {/* <Text className='text-lg text-white'>
                   {favoriteCoffee ? 'True' : 'False'}
                 </Text> */}
-                      <h4 className='text-lg text-[#aeaeae] font-semibold'>
+                      <h4 className='text-sm text-[#aeaeae] font-semibold'>
                         {item.special_ingredient}
                       </h4>
                     </div>

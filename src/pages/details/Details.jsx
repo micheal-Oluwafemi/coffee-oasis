@@ -77,7 +77,7 @@ const Details = () => {
                       {item.name}
                     </h1>
 
-                    <h4 className='text-lg text-[#aeaeae] font-semibold'>
+                    <h4 className='text-sm text-[#aeaeae] font-semibold'>
                       {item.special_ingredient}
                     </h4>
                   </div>
