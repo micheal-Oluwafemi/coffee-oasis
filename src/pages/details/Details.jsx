@@ -30,7 +30,7 @@ const Details = () => {
   return (
     <div className='font-poppins relative '>
       <div
-        className='h-screen overflow-scroll pb-14
+        className='height overflow-scroll pb-14
       '
       >
         {detailData.map((item) => (

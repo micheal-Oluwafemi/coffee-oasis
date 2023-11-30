@@ -24,7 +24,7 @@ const CBDetails = () => {
 
   return (
     <div className='relative'>
-      <div className='font-poppins h-screen overflow-y-scroll'>
+      <div className='font-poppins height  overflow-y-scroll'>
         {detailData.map((item) => (
           <div key={item.id}>
             <div>

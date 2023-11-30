@@ -8,6 +8,7 @@ import coffeeCup from '../../lottie/coffeecup.json';
 import { IoIosTrash } from 'react-icons/io';
 import { clearHistory } from '../../redux/HistorySlice';
 import Download from '../../lottie/download.json';
+import { Link, useNavigate } from 'react-router-dom';
 
 const History = () => {
   const [isSuccessful, setIsSuccessful] = useState(false);
@@ -28,8 +29,18 @@ const History = () => {
     'Nov',
     'Dec',
   ];
+
+  const getCoffeeDetails = (id) => {
+    window.localStorage.setItem('coffeeID', id);
+  };
+
+  const getCoffeeBeansDetails = (id) => {
+    window.localStorage.setItem('coffeeBeansID', id);
+  };
+
   const { itemsHistory } = useSelector((state) => state.history);
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const getAllTotal = (inner) => {
     const innerArrayTotal = inner.reduce(
@@ -137,11 +148,29 @@ const History = () => {
                     >
                       <div className='flex flex-row items-center justify-between'>
                         <div className='flex flex-row items-center gap-5'>
-                          <img
-                            src={detail.imagelink_square}
-                            alt=''
-                            className='w-20 h-20 rounded-xl'
-                          />
+                          <div
+                            onClick={() => {
+                              if (
+                                detail.name === 'Robusta Beans' ||
+                                detail.name === 'Arabica Beans' ||
+                                detail.name === 'Liberica Beans' ||
+                                detail.name === 'Excelsa Beans'
+                              ) {
+                                getCoffeeBeansDetails(detail.id);
+                                navigate('/cb-details');
+                              } else {
+                                getCoffeeDetails(detail.id);
+                                navigate('/cf-details');
+                              }
+                            }}
+                            className='cursor-pointer'
+                          >
+                            <img
+                              src={detail.imagelink_square}
+                              alt=''
+                              className='w-20 h-20 rounded-xl'
+                            />
+                          </div>
 
                           <div>
                             <div>
