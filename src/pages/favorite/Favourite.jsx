@@ -43,7 +43,7 @@ const Favourite = () => {
     <div className='font-poppins relative'>
       {/* <div className='px-2'> */}
       <div
-        className='h-screen overflow-y-scroll pb-12 pt-2 px-2 rounded-t-xl
+        className='height overflow-y-scroll pb-12 pt-2 px-2 rounded-t-xl
       '
       >
         {items.map((item) => (

@@ -35,7 +35,7 @@ const Cart = () => {
     return (
       <>
         <div
-          className='h-screen grid place-content-center
+          className='height grid place-content-center
         '
         >
           <div>
@@ -55,7 +55,7 @@ const Cart = () => {
 
   return (
     <div className='overflow-x-hidden relative font-poppins'>
-      <div className='px-3 font-poppins pt-5 h-screen overflow-scroll pb-40'>
+      <div className='px-3 font-poppins pt-5 height overflow-scroll pb-40'>
         <div className='flex flex-row justify-between items-center'>
           <Link to='/'>
             <div className=' p-3 bg-[#252A32] rounded-lg object-center '>

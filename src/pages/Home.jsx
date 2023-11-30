@@ -18,7 +18,7 @@ const Home = () => {
 
   return (
     <div className='relative '>
-      <div className='px-3 max-h-screen overflow-scroll py-3 font-poppins '>
+      <div className='px-3 height overflow-scroll py-3 font-poppins '>
         <div className='flex flex-row items-center justify-between'>
           <img src={logo} alt='logo' className='w-14 h-14' />
 

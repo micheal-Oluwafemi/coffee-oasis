@@ -44,7 +44,7 @@ const History = () => {
     return (
       <>
         <div
-          className='h-screen grid place-content-center
+          className='height grid place-content-center
         '
         >
           <div>
@@ -70,7 +70,7 @@ const History = () => {
         } relative font-poppins
     `}
       >
-        <div className='h-screen px-2 pb-16 pt-3 overflow-y-scroll'>
+        <div className='height px-2 pb-16 pt-3 overflow-y-scroll'>
           <div className='flex flex-row items-center justify-between'>
             <div
               className='bg-secondaryBlack

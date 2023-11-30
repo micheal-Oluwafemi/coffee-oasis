@@ -23,30 +23,13 @@ body {
 .bg-black-gradient {
   background: linear-gradient(
     144.39deg,
-    #ffffff -278.56%,
+    #181313 -278.56%,
     #6d6d6d -78.47%,
     #11101d 91.61%
   );
 }
 
-.toastbody {
-  /* justify-content: center;
-  align-items: center; */
-}
-
-.hide {
-  border-radius: 20px;
-  /* width: 50%; */
-  /* justify-content: center;
-  align-items: center; */
-
-  font-family: 'poppins', 'san-serif';
-}
-
-
-.contain {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.height {
+  height: 100vh;
+  height: 100dvh;
 }

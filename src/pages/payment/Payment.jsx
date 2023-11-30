@@ -35,7 +35,7 @@ const Payment = () => {
       <div className={`${isSuccessful === true ? 'blur-sm' : ''} relative`}>
         <div
           className={` font-poppins pt-3 px-3 overflow-x-hidden
-        h-screen overflow-y-scroll pb-20
+        height overflow-y-scroll pb-20
       `}
         >
           <div className={`flex items-center flex-row justify-between`}>
