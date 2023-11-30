@@ -21,7 +21,7 @@ const Favourite = () => {
     return (
       <>
         <div
-          className='h-screen grid place-content-center pt-3
+          className='height grid place-content-center pt-3
         '
         >
           <div>
