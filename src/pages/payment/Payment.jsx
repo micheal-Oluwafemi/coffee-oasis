@@ -145,9 +145,9 @@ const Payment = () => {
               setTimeout(() => {
                 setIsSuccessful(false);
                 dispatch(AddHistory(item));
-                navigate('/history');
                 dispatch(clearCart());
-              }, 4000);
+                navigate('/history');
+              }, 3000);
             }}
             className='bg-primaryOrange px-5 py-3.5 rounded-xl cursor-pointer mb-1'
           >
