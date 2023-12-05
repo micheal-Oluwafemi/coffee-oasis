@@ -152,7 +152,7 @@ const Payment = () => {
             className='bg-primaryOrange px-5 py-3.5 rounded-xl cursor-pointer mb-1'
           >
             <h1 className='text-white font-semibold text-base'>
-              Pay from {active}
+              Pay with {active}
             </h1>
           </div>
         </div>
